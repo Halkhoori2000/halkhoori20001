@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chatbot">Chatbot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ideas">Ideas Board</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Me Section (Updated Professional Layout) -->
+    <section id="about" class="about-section">
+        <div class="container-fluid">
+            <div class="row align-items-center" style="height: 100vh;">
+                <!-- Top Section: Introduction -->
+                <div class="col-md-12 text-center about-intro">
+                    <h2 id="typewriter-name">Hi, I'm John Doe</h2></br>
+                    <p id="typewriter-intro">I’m a technologist specializing in AI, cybersecurity, and blockchain development. With years of experience in the field, I am committed to leveraging emerging technologies to solve real-world problems.</p>
+                </div>
+                
+                <!-- Skill Cards Section -->
+                <div id="skills" class="col-md-12 text-center skills-section">
+                    <h3 class="animate-fadeIn">Skills & Technologies</h3>
+                    <!-- Left Arrow -->
+                    <button class="arrow-button left-arrow" onclick="scrollLeft()">&#8249;</button>
+                    <!-- Skill Icons Wrapper -->
+                    <div class="skill-icons">
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <img src="python-logo.png" alt="Python" class="skills-logo">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-java"></i>
+                            <img src="java-logo.png" alt="Java" class="skills-logo">
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-cubes"></i>
+                            <img src="javascript-logo.png" alt="JavaScript" class="skills-logo">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-cubes"></i>
+                            <img src="blockchain-logo.svg" alt="Blockchain" class="skills-logo">
+                            <p>Blockchain</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <p>Cybersecurity</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <p>React</p>
+                        </div>
+                    </div>
+                    <!-- Right Arrow -->
+                    <button class="arrow-button right-arrow" onclick="scrollRight()">&#8250;</button>
+                </div>
+
+                <!-- Personal Story Section -->
+                <div class="col-md-12 text-center story-section">
+                    <p class="story-text">
+                        From my early fascination with AI to my deep dive into blockchain technologies, I’ve always been passionate about finding the intersection between code and real-world solutions. 
+                        I enjoy using my skills in cybersecurity, quantum computing, and networking to develop innovative solutions for tomorrow’s challenges.
+                    </p>
+                </div>
+
+                <!-- Bottom Section: Call-to-Action -->
+                <div class="col-md-12 text-center cta-section">
+                    <a href="#cv" class="btn-cta">View My CV</a>
+                    <a href="#contact" class="btn-cta">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+        <div class="container">
+            <!-- Header with Resume -->
+            <div class="cv-header">
+                <h2 class="left-align">John Doe's Resume</h2>
+                <a href="resume.pdf" class="btn btn-primary right-align" download>Download Resume</a>
+            </div>
+
+            <p class="text-center bio animate-cv-bio">Aspiring graduate student with a dual major in Computer Engineering and Physics, interested in machine learning, cybersecurity, data visualization, robotics, and quantum computing.</p>
+
+            <!-- Education Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Education</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('education-popup')">University of California, Berkeley</a>
+                        <p>Bachelor of Science in Data Science & Physics</p>
+                    </div>
+                    <div class="right-align">
+                        <p>Anticipated Graduation: Dec 2024</p>
+                        <p>Comutative CGPA: 3.40/4.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Experience</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('experience-popup')">Data Analyst Intern at Tech Innovators</a>
+                    </div>
+                    <div class="right-align">
+                        <p>June 2024 - July 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internships Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Internships</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('internships-popup')">Tech Innovators Inc. · Data Analyst Intern</a>
+                        <ul>
+                            <li>Analyzed large datasets to extract actionable insights for product development teams</li>
+                            <li>Created comprehensive data visualizations to support strategic decision-making</li>
+                            <li>Collaborated with cross-functional teams to optimize data processes and reporting frameworks</li>
+                        </ul>
+                    </div>
+                    <div class="right-align">
+                        <p>August 2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentations Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Presentations</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('presentations-popup')">Robotics in Everyday Life: Enhancements and Challenges</a>
+                    </div>
+                    <div class="right-align">
+                        <p>Berkeley | Spring 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Projects</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('project1-popup')">Smart Home Automation System</a></br>
+                        <a href="#" class="clickable-title" onclick="openPopup('project2-popup')">Blockchain Decentralized Finance</a>
+                    </div>
+                    <div class="right-align">
+                        <p>Spring 2023</p>
+                        <p>January 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Skills</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <ul>
+                            <li>Languages: Python, Java, C++, HTML/CSS, JavaScript, R, SQL</li>
+                            <li>Frameworks & Tools: TensorFlow, Keras, Unity, Docker, Git, Tableau, Raspberry Pi, Arduino, MATLAB, Wireshark, AWS, VirtualBox</li>
+    
+                            <div class="skills-images">
+                                <img src="python-logo.png" alt="Python" class="skills-logo">
+                                <img src="java-logo.png" alt="Java" class="skills-logo">
+                                <img src="javascript-logo.png" alt="JavaScript" class="skills-logo">
+                                <!-- Add more skill logos as needed -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Window -->
+    <div id="popup-window">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div id="popup-content"></div>
+    </div>
+
+
+    <!-- Chatbot Section -->
+    <section id="chatbot" class="chatbot-section">
+        <div class="container">
+            <h2 class="text-center">NLP Chatbot</h2>
+            <p class="text-center">Ask me about my background, skills, and projects!</p>
+
+            <!-- Chat Window -->
+            <div id="chat-window" class="chatbox">
+                <div id="chat-log" class="chatbox-window">
+                    <!-- Friendly Welcome Message -->
+                    <p class="welcome-message"><strong>Chatbot:</strong> Hi! I’m your personal portfolio assistant. Ask me about my projects or experience!</p>
+                </div>
+
+                <!-- User Input and Send Button -->
+                <div class="chatbox-input">
+                    <input type="text" id="user-input" class="form-control" placeholder="Ask me anything about me!">
+                    <button id="send-btn" onclick="sendMessage()" class="btn btn-info mt-3">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase-section">
+        <div class="container">
+            <h2 class="text-center">Showcase of Innovations & Technologies</h2>
+
+            <!-- Showcase Entries -->
+            <div class="showcase-entries">
+                <!-- AI Project -->
+                <div class="showcase-entry">
+                    <img src="smart-home-automation.jpeg" alt="AI Project">
+                    <h3>AI Project: Smart Home Automation</h3>
+                    <p>This project focuses on creating a smart home system using AI and IoT technologies.</p>
+                    <button class="btn btn-primary read-more-btn" data-article="ai-article">Read More</button>
+                </div>
+
+                <!-- Blockchain Project -->
+                <div class="showcase-entry">
+                    <img src="blockchain-image1.webp" alt="Blockchain Project">
+                    <h3>Blockchain: Decentralized Finance (DeFi)</h3>
+                    <p>This project explores decentralized finance systems built using blockchain technology.</p>
+                    <button class="btn btn-primary read-more-btn" data-article="blockchain-article">Read More</button>
+                </div>
+
+                <!-- AR/VR Project -->
+                <div class="showcase-entry">
+                    <img src="arvr-image1.jpg" alt="AR/VR Project">
+                    <h3>AR/VR in Education</h3>
+                    <p>Utilizing AR and VR technologies, this project enhances the learning experience.</p>
+                    <button class="btn btn-primary read-more-btn" data-article="arvr-article">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal (with Maximize Button) -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <span class="maximize-btn">&#x26F6;</span> <!-- Maximize button -->
+            <div id="modal-article-content" class="modal-scrollable-content">
+                <!-- Dynamic article content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Feedback Section (Hardcoded) -->
+    <section id="feedback" class="feedback-section">
+        <div class="container">
+            <h2>Feedback</h2>
+            <textarea id="feedback-input" placeholder="Leave your feedback..."></textarea>
+            <button class="btn btn-primary mt-3">Submit Feedback</button>
+        </div>
+    </section>
+
+    <!-- Ideas Board Section (Hardcoded) -->
+    <section id="ideas" class="ideas-section">
+        <div class="container">
+            <h2>Ideas Board</h2>
+            <input type="text" id="idea-input" placeholder="Post your idea..." class="form-control mb-3">
+            <button class="btn btn-primary" type="button">Submit Idea</button>
+        </div>
+    </section>
+
+    <footer class="text-center text-light p-3">
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script>
+        // Listen to the scroll event and update the background position
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;  // Get the vertical scroll position
+            const speed = -0.01;  // Use a negative value to reverse the background scroll direction
+
+            // Move the background in the opposite direction as the user scrolls
+            document.body.style.backgroundPositionY = `${scrollPosition * speed}px`;
+        });
+
+        // Function to check if an element is in the viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+
+        // Function to handle showing the fade-up animation when chatbot section is in view
+        function handleScroll() {
+            const chatbotSection = document.getElementById('chatbot');
+
+            // Check if the chatbot section is in the viewport and has not already been animated
+            if (isElementInViewport(chatbotSection) && !chatbotSection.classList.contains('visible')) {
+                chatbotSection.classList.add('visible');  // Show animation
+            }
+        }
+
+        // Add event listener to trigger the scroll function
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger handleScroll on page load in case the chatbot is already in view
+        document.addEventListener('DOMContentLoaded', handleScroll);
+
+
+        // Detect when the Showcase Section comes into view
+        window.addEventListener('scroll', function() {
+            const showcaseSection = document.querySelector('.showcase-section');
+            const sectionPosition = showcaseSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (sectionPosition < screenPosition) {
+                showcaseSection.classList.add('scrolled-into-view');
+            } else {
+                showcaseSection.classList.remove('scrolled-into-view');  // Reset animation on scroll up
+            }
+        });
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
