@@ -13,18 +13,33 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <a class="navbar-brand" href="#">My Portfolio</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- 3-Dot Menu for Mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#x22EE; <!-- Vertical 3-dot icon -->
+            </div>
+            <div class="collapse navbar-collapse navbar-links" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="#chatbot">Chatbot</a></li>
                     <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
                     <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ideas">Ideas Board</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="uae-flag">
+            <img src="uae-flag.gif" alt="UAE Flag" class="flag-img">
+        </div>
+        <div class="frame">
+            <img src="my-headshot.jpg" alt="Headshot" class="headshot">
+            <div class="frame-overlay"></div>
+        </div>
+    </section>
 
     <!-- About Me Section (Updated Professional Layout) -->
     <section id="about" class="about-section">
@@ -32,48 +47,54 @@
             <div class="row align-items-center" style="height: 100vh;">
                 <!-- Top Section: Introduction -->
                 <div class="col-md-12 text-center about-intro">
-                    <h2 id="typewriter-name">Hi, I'm Hamdan Alkhoori</h2></br>
+                    <h2 id="typewriter-name">Hi, I'm John Doe</h2></br>
                     <p id="typewriter-intro">I’m a technologist specializing in AI, cybersecurity, and blockchain development. With years of experience in the field, I am committed to leveraging emerging technologies to solve real-world problems.</p>
                 </div>
                 
-                <!-- Skill Cards Section -->
                 <div id="skills" class="col-md-12 text-center skills-section">
-                    <h3 class="animate-fadeIn">Skills & Technologies</h3>
-                    <!-- Left Arrow -->
-                    <button class="arrow-button left-arrow" onclick="scrollLeft()">&#8249;</button>
+                    <h4 class="animate-fadeIn">Skills & Technologies</h4>
+                    
                     <!-- Skill Icons Wrapper -->
-                    <div class="skill-icons">
-                        <div class="skill-card">
-                            <i class="fab fa-python"></i>
-                            <img src="python-logo.png" alt="Python" class="skills-logo">
-                            <p>Python</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-java"></i>
-                            <img src="java-logo.png" alt="Java" class="skills-logo">
-                            <p>Java</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-cubes"></i>
-                            <img src="javascript-logo.png" alt="JavaScript" class="skills-logo">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-cubes"></i>
-                            <img src="blockchain-logo.svg" alt="Blockchain" class="skills-logo">
-                            <p>Blockchain</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-shield-alt"></i>
-                            <p>Cybersecurity</p>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-react"></i>
-                            <p>React</p>
+                    <div class="skill-icons-wrapper">
+                        <div class="skill-icons">
+                            <div class="skill-card">
+                                <img src="python-logo.png" alt="Python" class="skills-logo">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="java-logo.png" alt="Java" class="skills-logo">
+                                <p>Java</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="javascript-logo.png" alt="JavaScript" class="skills-logo">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="blockchain-logo.svg" alt="Blockchain" class="skills-logo">
+                                <p>Blockchain</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="react-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="networking-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>Networking</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="HTML-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="CSS-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="php-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>PHP</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- Right Arrow -->
-                    <button class="arrow-button right-arrow" onclick="scrollRight()">&#8250;</button>
                 </div>
 
                 <!-- Personal Story Section -->
@@ -98,25 +119,31 @@
         <div class="container">
             <!-- Header with Resume -->
             <div class="cv-header">
-                <h2 class="left-align">Hamdan Alkhoori's CV</h2>
+                <h2 class="left-align">John Doe's Resume</h2>
                 <a href="resume.pdf" class="btn btn-primary right-align" download>Download Resume</a>
             </div>
 
             <p class="text-center bio animate-cv-bio">Aspiring graduate student with a dual major in Computer Engineering and Physics, interested in machine learning, cybersecurity, data visualization, robotics, and quantum computing.</p>
 
             <!-- Education Section -->
-             <div class="cv-section-item">
+            <div class="cv-section-item">
                 <h3 class="cv-section-title">Education</h3>
                 <hr class="section-line">
                 <div class="cv-section-content">
                     <div class="left-align">
                         <a href="#" class="clickable-title" onclick="openPopup('education-popup')">University of California, Berkeley</a>
-                        <p>Bachelor of Science in Data Science & Physics</p>
-                        <p>Bachelor of Science in Data Science & Physics</p>
+                        <p>Dual Degree Recipient</br>
+                        Bachelor of Science in Data Science</br>
+                        Bachelor of Science in Physics
+                        <ul>
+                            <li>Overall GPA: 3.90/4.00</li>
+                            <li>Relevant Coursework: Algebra, Geometry, Statistics, Robots, Penetration tools</li>
+                        </ul>
+                        </p>
                     </div>
                     <div class="right-align">
-                        <p>Anticipated Graduation: Dec 2024</p>
-                        <p>Comutative CGPA: 3.40/4.00</p>
+                        <p>Anticipated Graduation: Dec 2024</br>
+                        Comutative CGPA: 3.40/4.00</p>
                     </div>
                 </div>
             </div>
@@ -178,8 +205,8 @@
                         <a href="#" class="clickable-title" onclick="openPopup('project2-popup')">Blockchain Decentralized Finance</a>
                     </div>
                     <div class="right-align">
-                        <p>Spring 2023</p>
-                        <p>January 2023</p>
+                        <p>Spring 2023</br>
+                        January 2023</p>
                     </div>
                 </div>
             </div>
@@ -291,15 +318,6 @@
         </div>
     </section>
 
-    <!-- Ideas Board Section (Hardcoded) -->
-    <section id="ideas" class="ideas-section">
-        <div class="container">
-            <h2>Ideas Board</h2>
-            <input type="text" id="idea-input" placeholder="Post your idea..." class="form-control mb-3">
-            <button class="btn btn-primary" type="button">Submit Idea</button>
-        </div>
-    </section>
-
     <footer class="text-center text-light p-3">
         <p>&copy; 2024 My Portfolio</p>
     </footer>
@@ -313,6 +331,16 @@
             // Move the background in the opposite direction as the user scrolls
             document.body.style.backgroundPositionY = `${scrollPosition * speed}px`;
         });
+
+        // Toggle function for 3-dot menu on mobile
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarNav');
+            if (navbarLinks) {
+                navbarLinks.classList.toggle('show'); // Add or remove 'show' class
+            } else {
+                console.error("Navbar links element not found.");
+            }
+        }
 
         // Function to check if an element is in the viewport
         function isElementInViewport(el) {
