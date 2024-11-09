@@ -688,17 +688,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-// Parallax Effect on Scroll
-window.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-
-    // Move backgrounds at different speeds
-    document.querySelector('.desert').style.transform = `translateY(${scrollPosition * 0.2}px)`;
-    document.querySelector('.city').style.transform = `translateY(${scrollPosition * 0.1}px)`;
-});
-
-
 // Function to highlight the navbar link for the current section
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section');
@@ -903,7 +892,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-// Chatbot Query Handling
+// Chatbot Query Handling with Feedback Modal
 function sendMessage() {
     const input = document.getElementById("user-input").value;
     const chatLog = document.getElementById("chat-log");
@@ -921,17 +910,22 @@ function sendMessage() {
         .then(response => response.json())
         .then(data => {
             if (data.answer) {
-                // Animate the chatbot response with a fade-in effect
                 chatLog.innerHTML += `<p class="chatbot-response"><strong>Chatbot:</strong> ${data.answer}</p>`;
-                chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
+                
+                // Check if the chatbot's response is the feedback trigger message
+                if (data.answer === "I don't know the answer. Please leave feedback for further questions!") {
+                    openFeedbackModal(); // Trigger feedback popup
+                }
+
+                chatLog.scrollTop = chatLog.scrollHeight;
             } else {
-                chatLog.innerHTML += `<p class="chatbot-response"><strong>Chatbot:</strong> I don't know the answer. Please leave feedback here.</p>`;
-                chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
+                chatLog.innerHTML += `<p class="chatbot-response"><strong>Chatbot:</strong> Sorry, there was an error with the chatbot.</p>`;
             }
+            chatLog.scrollTop = chatLog.scrollHeight;
         })
         .catch(error => {
             chatLog.innerHTML += `<p><strong>Chatbot:</strong> Sorry, there was an error with the chatbot.</p>`;
-            chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
+            chatLog.scrollTop = chatLog.scrollHeight;
         });
 
         // Clear the input field after sending the message
@@ -939,29 +933,33 @@ function sendMessage() {
     }
 }
 
+// Open the Feedback Modal
+function openFeedbackModal() {
+    const modal = document.getElementById("feedback-modal");
+    modal.style.display = "block";
+}
+
+// Close the Feedback Modal
+function closeFeedbackModal() {
+    const modal = document.getElementById("feedback-modal");
+    modal.style.display = "none";
+}
+
+// Submit Feedback Function
+function submitFeedback() {
+    closeFeedbackModal();
+    const chatLog = document.getElementById("chat-log");
+    chatLog.innerHTML += `<p><strong>Chatbot:</strong> Thank you for your feedback!</p>`;
+    chatLog.scrollTop = chatLog.scrollHeight;
+}
+
 // Handle Enter Key Press
 document.getElementById("user-input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
-        event.preventDefault();  // Prevent the form from being submitted
-        sendMessage();  // Call the sendMessage function
+        event.preventDefault();
+        sendMessage();
     }
 });
-
-// Ideas Board: Add Ideas Dynamically
-function addIdea() {
-    const idea = document.getElementById('idea-input').value;
-
-    if (idea) {
-        const ideaEntry = document.createElement('div');
-        ideaEntry.className = 'idea-entry';
-        ideaEntry.innerHTML = `<p>${idea}</p>`;
-        
-        document.getElementById('ideas-list').appendChild(ideaEntry);
-        document.getElementById('idea-input').value = '';  // Clear input
-    } else {
-        alert('Please enter an idea.');
-    }
-}
 
 // View Site Button
 function viewSite() {

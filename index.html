@@ -6,6 +6,20 @@
     <title>My Interactive Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -19,7 +33,7 @@
             </div>
             <div class="collapse navbar-collapse navbar-links" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="#chatbot">Chatbot</a></li>
@@ -30,25 +44,29 @@
         </nav>
     </header>
 
-    <!-- Home Section with Layered Backgrounds -->
-    <section id="home" class="home-section">
-        <!-- Desert Layer -->
-        <div class="background-layer desert"></div>
-        <!-- City Layer -->
-        <div class="background-layer city"></div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+        <img src="city-bg.jpg" alt="City Background" class="hero-bg" data-aos="fade-in">
 
-        <!-- Content Layer -->
-        <div class="content-layer">
-            <!-- UAE Flag -->
-            <img src="uae-flag.gif" alt="UAE Flag" class="uae-flag flag-img">
+        <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-center">
+                <!-- Headshot Image -->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img src="headshot.png" alt="Your Headshot" class="headshot">
+                </div>
 
-            <!-- Dubai Frame with Headshot -->
-            <div class="frame-container">
-                <img src="dubai-frame.png" alt="Dubai Frame" class="dubai-frame">
-                <img src="my-headshot.jpg" alt="Profile Headshot" class="headshot">
+                <!-- Text Content -->
+                <div class="col-md-9 text-content">
+                    <h2>John Doe</h2>
+                    <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Photographer</span>
+                        <span class="typed-cursor typed-cursor--blink"></span>
+                    </p>
+                    <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- About Me Section (Updated Professional Layout) -->
     <section id="about" class="about-section">
@@ -142,12 +160,12 @@
                     <div class="left-align">
                         <a href="#" class="clickable-title" onclick="openPopup('education-popup')">University of California, Berkeley</a>
                         <p>Dual Degree Recipient</br>
-                        Bachelor of Science in Data Science</br>
-                        Bachelor of Science in Physics
-                        <ul>
-                            <li>Overall GPA: 3.90/4.00</li>
-                            <li>Relevant Coursework: Algebra, Geometry, Statistics, Robots, Penetration tools</li>
-                        </ul>
+                            Bachelor of Science in Data Science</br>
+                            Bachelor of Science in Physics
+                            <ul>
+                                <li>Overall GPA: 3.90/4.00</li>
+                                <li>Relevant Coursework: Algebra, Geometry, Statistics, Robots, Penetration tools</li>
+                            </ul>
                         </p>
                     </div>
                     <div class="right-align">
@@ -272,6 +290,22 @@
         </div>
     </section>
 
+    <!-- Feedback Popup Modal -->
+    <div id="feedback-modal" class="feedback-modal">
+        <div class="feedback-content">
+            <h3>Feedback</h3>
+            <p>I don't know the answer. Please leave feedback below.</p>
+            <form id="feedback-form">
+                <input type="text" id="feedback-name" placeholder="Your Name" required>
+                <input type="email" id="feedback-email" placeholder="Your Email" required>
+                <input type="text" id="feedback-subject" placeholder="Subject" required>
+                <textarea id="feedback-message" placeholder="Your Message" required></textarea>
+                <button type="button" onclick="submitFeedback()" class="btn btn-primary mt-3">Submit Feedback</button>
+            </form>
+            <span class="close-btn" onclick="closeFeedbackModal()">&times;</span>
+        </div>
+    </div>
+
     <!-- Showcase Section -->
     <section id="showcase" class="showcase-section">
         <div class="container">
@@ -316,16 +350,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Feedback Section (Hardcoded) -->
-    <section id="feedback" class="feedback-section">
-        <div class="container">
-            <h2>Feedback</h2>
-            <textarea id="feedback-input" placeholder="Leave your feedback..."></textarea>
-            <button class="btn btn-primary mt-3">Submit Feedback</button>
-        </div>
-    </section>
 
     <footer class="text-center text-light p-3">
         <p>&copy; 2024 My Portfolio</p>
