@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>My Interactive Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <!-- 3-Dot Menu for Mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#x22EE; <!-- Vertical 3-dot icon -->
+            </div>
+            <div class="collapse navbar-collapse navbar-links" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+        <img src="city-bg.jpg" alt="City Background" class="hero-bg" data-aos="fade-in">
+
+        <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-center">
+                <!-- Headshot Image -->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img src="headshot.png" alt="Your Headshot" class="headshot">
+                </div>
+
+                <!-- Text Content -->
+                <div class="col-md-9 text-content">
+                    <h2>John Doe</h2>
+                    <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Photographer</span>
+                        <span class="typed-cursor typed-cursor--blink"></span>
+                    </p>
+                    <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Me Section (Updated Professional Layout) -->
+    <section id="about" class="about-section">
+        <div class="container-fluid">
+            <div class="row align-items-center" style="height: 100vh;">
+                <!-- Top Section: Introduction -->
+                <div class="col-md-12 text-center about-intro">
+                    <h2 id="typewriter-name">Hi, I'm John Doe</h2></br>
+                    <p id="typewriter-intro">I’m a technologist specializing in AI, cybersecurity, and blockchain development. With years of experience in the field, I am committed to leveraging emerging technologies to solve real-world problems.</p>
+                </div>
+                
+                <div id="skills" class="col-md-12 text-center skills-section">
+                    <h4 class="animate-fadeIn">Skills & Technologies</h4>
+                    
+                    <!-- Skill Icons Wrapper -->
+                    <div class="skill-icons-wrapper">
+                        <div class="skill-icons">
+                            <div class="skill-card">
+                                <img src="python-logo.png" alt="Python" class="skills-logo">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="java-logo.png" alt="Java" class="skills-logo">
+                                <p>Java</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="javascript-logo.png" alt="JavaScript" class="skills-logo">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="blockchain-logo.svg" alt="Blockchain" class="skills-logo">
+                                <p>Blockchain</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="react-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="networking-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>Networking</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="HTML-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="CSS-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill-card">
+                                <img src="php-logo.png" alt="Blockchain" class="skills-logo">
+                                <p>PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Story Section -->
+                <div class="col-md-12 text-center story-section">
+                    <p class="story-text">
+                        From my early fascination with AI to my deep dive into blockchain technologies, I’ve always been passionate about finding the intersection between code and real-world solutions. 
+                        I enjoy using my skills in cybersecurity, quantum computing, and networking to develop innovative solutions for tomorrow’s challenges.
+                    </p>
+                </div>
+
+                <!-- Bottom Section: Call-to-Action -->
+                <div class="col-md-12 text-center cta-section">
+                    <a href="#cv" class="btn-cta">View My CV</a>
+                    <a href="#contact" class="btn-cta">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+        <div class="container">
+            <!-- Header with Resume -->
+            <div class="cv-header">
+                <h2 class="left-align">John Doe's Resume</h2>
+                <a href="resume.pdf" class="btn btn-primary right-align" download>Download Resume</a>
+            </div>
+
+            <p class="text-center bio animate-cv-bio">Aspiring graduate student with a dual major in Computer Engineering and Physics, interested in machine learning, cybersecurity, data visualization, robotics, and quantum computing.</p>
+
+            <!-- Education Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Education</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('education-popup')">University of California, Berkeley</a>
+                        <p>Dual Degree Recipient</br>
+                            Bachelor of Science in Data Science</br>
+                            Bachelor of Science in Physics
+                            <ul>
+                                <li>Overall GPA: 3.90/4.00</li>
+                                <li>Relevant Coursework: Algebra, Geometry, Statistics, Robots, Penetration tools</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="right-align">
+                        <p>Anticipated Graduation: Dec 2024</br>
+                        Comutative CGPA: 3.40/4.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Experience</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('experience-popup')">Data Analyst Intern at Tech Innovators</a>
+                    </div>
+                    <div class="right-align">
+                        <p>June 2024 - July 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internships Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Internships</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('internships-popup')">Tech Innovators Inc. · Data Analyst Intern</a>
+                        <ul>
+                            <li>Analyzed large datasets to extract actionable insights for product development teams</li>
+                            <li>Created comprehensive data visualizations to support strategic decision-making</li>
+                            <li>Collaborated with cross-functional teams to optimize data processes and reporting frameworks</li>
+                        </ul>
+                    </div>
+                    <div class="right-align">
+                        <p>August 2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentations Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Presentations</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('presentations-popup')">Robotics in Everyday Life: Enhancements and Challenges</a>
+                    </div>
+                    <div class="right-align">
+                        <p>Berkeley | Spring 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Projects</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <a href="#" class="clickable-title" onclick="openPopup('project1-popup')">Smart Home Automation System</a></br>
+                        <a href="#" class="clickable-title" onclick="openPopup('project2-popup')">Blockchain Decentralized Finance</a>
+                    </div>
+                    <div class="right-align">
+                        <p>Spring 2023</br>
+                        January 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="cv-section-item">
+                <h3 class="cv-section-title">Skills</h3>
+                <hr class="section-line">
+                <div class="cv-section-content">
+                    <div class="left-align">
+                        <ul>
+                            <li>Languages: Python, Java, C++, HTML/CSS, JavaScript, R, SQL</li>
+                            <li>Frameworks & Tools: TensorFlow, Keras, Unity, Docker, Git, Tableau, Raspberry Pi, Arduino, MATLAB, Wireshark, AWS, VirtualBox</li>
+    
+                            <div class="skills-images">
+                                <img src="python-logo.png" alt="Python" class="skills-logo">
+                                <img src="java-logo.png" alt="Java" class="skills-logo">
+                                <img src="javascript-logo.png" alt="JavaScript" class="skills-logo">
+                                <!-- Add more skill logos as needed -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Window -->
+    <div id="popup-window">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div id="popup-content"></div>
+    </div>
+
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase-section">
+        <div class="container">
+            <h2 class="text-center">Showcase of Innovations & Technologies</h2>
+
+            <!-- AI Category -->
+            <a href="#" class="category-link" onclick="toggleCategory('ai-category'); return false;">
+                <h2 class="qa-question">
+                    AI (Artificial Intelligence)
+                </h2>
+            </a>
+            <div id="ai-category" class="showcase-category" style="display: none;">
+                <p>Explore projects in AI, focusing on machine learning, predictive analysis, and automation.</p>
+                <div class="row">
+                    <!-- AI Projects (Row with three articles) -->
+                    <div class="col-md-4">
+                        <div class="showcase-entry">
+                            <img src="smart-home-automation.jpeg" alt="AI Project">
+                            <h3>AI Project: Smart Home Automation</h3>
+                            <p>This project focuses on creating a smart home system using AI and IoT technologies.</p>
+                            <button class="btn btn-primary read-more-btn" data-article="ai-article">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="showcase-entry">
+                            <img src="blockchain-image1.webp" alt="Blockchain Project">
+                            <h3>Blockchain: Decentralized Finance (DeFi)</h3>
+                            <p>This project explores decentralized finance systems built using blockchain technology.</p>
+                            <button class="btn btn-primary read-more-btn" data-article="blockchain-article">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="showcase-entry">
+                            <img src="arvr-image1.jpg" alt="AR/VR Project">
+                            <h3>AR/VR in Education</h3>
+                            <p>Utilizing AR and VR technologies, this project enhances the learning experience.</p>
+                            <button class="btn btn-primary read-more-btn" data-article="arvr-article">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Q&A Section -->
+                <div class="qa-section">
+                    <!-- Q&A Section -->
+                    <h3 style="text-align: center; margin-top: 50px;">Questions and Answers</h3>
+
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <!-- Left Column -->
+                        <div style="width: 45%;">
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What is a smart home system?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>A smart home system automates household activities using IoT devices and AI technologies to optimize comfort, energy usage, and security.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    How does AI learn user behavior?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>AI systems analyze user data over time, identifying patterns and preferences to predict future behavior and optimize settings.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Can smart homes save energy?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Yes, AI systems can reduce energy consumption by adjusting settings based on user behavior, ensuring optimal energy use at all times.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What devices are used in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Smart homes use IoT devices like sensors, cameras, thermostats, and smart lighting systems to automate various tasks.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Is it possible to integrate AI with voice assistants?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Yes, AI can be integrated with voice assistants like Alexa or Google Home to enable hands-free control over smart home devices.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Can AI improve home security?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Yes, AI improves home security by offering real-time monitoring, anomaly detection, and facial recognition capabilities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div style="width: 45%;">
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    How do smart homes reduce energy costs?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Smart homes reduce energy costs by optimizing appliance usage during off-peak hours and minimizing unnecessary energy use.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What is the role of IoT in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>The Internet of Things (IoT) connects devices and sensors within the home to a central network, allowing for seamless automation and control.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What challenges exist with AI in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Challenges include data privacy concerns, the complexity of setting up smart systems, and the need for continuous updates to AI algorithms.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Can AI systems in smart homes be hacked?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>While no system is entirely hack-proof, using strong encryption and regular security updates can help protect AI systems in smart homes from cyber threats.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What are some popular AI-powered smart home platforms?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Popular AI-powered smart home platforms include Google Nest, Amazon Echo, Apple HomeKit, and Samsung SmartThings.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What is the future of AI in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>The future of AI in smart homes will involve greater automation, more sophisticated learning capabilities, and deeper integration with IoT devices and voice assistants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robotics Category -->
+            <a href="#" class="category-link" onclick="toggleCategory('robotics-category'); return false;">
+                <h2 class="qa-question">
+                    Robotics
+                </h2>
+            </a>
+            <div id="robotics-category" class="showcase-category" style="display: none;">
+                <p>Advancements in robotics for applications in industry, healthcare, and more.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="showcase-entry">
+                            <img src="robotics.jpg" alt="Robotics Project">
+                            <h4>Industrial Robotics</h4>
+                            <p>Automation in industries to enhance efficiency and safety.</p>
+                            <button class="btn btn-primary read-more-btn" data-article="robotics-article">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="showcase-entry">
+                            <img src="robotics2.jpg" alt="Robotics Project 2">
+                            <h4>Robotics Project 2</h4>
+                            <p>Description of robotics project 2.</p>
+                            <button class="btn btn-primary read-more-btn" data-article="robotics-article2">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="showcase-entry">
+                            <img src="robotics3.jpg" alt="Robotics Project 3">
+                            <h4>Robotics Project 3</h4>
+                            <p>Description of robotics project 3.</p>
+                            <button class="btn btn-primary read-more-btn" data-article="robotics-article3">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Q&A Section -->
+                <div class="qa-section">
+                    <!-- Q&A Section -->
+                    <h3 style="text-align: center; margin-top: 50px;">Questions and Answers</h3>
+
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <!-- Left Column -->
+                        <div style="width: 45%;">
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What is a smart home system?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>A smart home system automates household activities using IoT devices and AI technologies to optimize comfort, energy usage, and security.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    How does AI learn user behavior?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>AI systems analyze user data over time, identifying patterns and preferences to predict future behavior and optimize settings.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Can smart homes save energy?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Yes, AI systems can reduce energy consumption by adjusting settings based on user behavior, ensuring optimal energy use at all times.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What devices are used in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Smart homes use IoT devices like sensors, cameras, thermostats, and smart lighting systems to automate various tasks.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Is it possible to integrate AI with voice assistants?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Yes, AI can be integrated with voice assistants like Alexa or Google Home to enable hands-free control over smart home devices.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Can AI improve home security?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Yes, AI improves home security by offering real-time monitoring, anomaly detection, and facial recognition capabilities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div style="width: 45%;">
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    How do smart homes reduce energy costs?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Smart homes reduce energy costs by optimizing appliance usage during off-peak hours and minimizing unnecessary energy use.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What is the role of IoT in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>The Internet of Things (IoT) connects devices and sensors within the home to a central network, allowing for seamless automation and control.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What challenges exist with AI in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Challenges include data privacy concerns, the complexity of setting up smart systems, and the need for continuous updates to AI algorithms.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    Can AI systems in smart homes be hacked?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>While no system is entirely hack-proof, using strong encryption and regular security updates can help protect AI systems in smart homes from cyber threats.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What are some popular AI-powered smart home platforms?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>Popular AI-powered smart home platforms include Google Nest, Amazon Echo, Apple HomeKit, and Samsung SmartThings.</p>
+                                </div>
+                            </div>
+
+                            <div class="qa-box">
+                                <h5 class="qa-question">
+                                    What is the future of AI in smart homes?
+                                </h5>
+                                <div class="qa-content">
+                                    <p>The future of AI in smart homes will involve greater automation, more sophisticated learning capabilities, and deeper integration with IoT devices and voice assistants.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal (with Maximize Button) -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <span class="maximize-btn">&#x26F6;</span> <!-- Maximize button -->
+            <div id="modal-article-content" class="modal-scrollable-content">
+                <!-- Dynamic article content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <main class="main">
+
+            <!-- Page Title -->
+            <div class="page-title" data-aos="fade">
+              <div class="heading">
+                <div class="container">
+                  <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                      <h1>Contact</h1>
+                      <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+        
+            <!-- Contact Section -->
+            <section class="contact section">
+        
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+                <div class="row gy-4">
+        
+                  <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+                      <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+                      <div>
+                        <h3>Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+        
+                  <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+                      <i class="icon bi bi-telephone flex-shrink-0"></i>
+                      <div>
+                        <h3>Call Me</h3>
+                        <p>+1 5589 55488 55</p>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+        
+                  <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+                      <i class="icon bi bi-envelope flex-shrink-0"></i>
+                      <div>
+                        <h3>Email Us</h3>
+                        <p>info@example.com</p>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+        
+                  <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+                      <i class="icon bi bi-share flex-shrink-0"></i>
+                      <div>
+                        <h3>Social Profiles</h3>
+                        <div class="social-links">
+                          <a href="#"><i class="bi bi-twitter-x"></i></a>
+                          <a href="#"><i class="bi bi-facebook"></i></a>
+                          <a href="#"><i class="bi bi-instagram"></i></a>
+                          <a href="#"><i class="bi bi-skype"></i></a>
+                          <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+        
+                </div>
+        
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+                  <div class="row gy-4">
+        
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+        
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+        
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+        
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+        
+                    <div class="col-md-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+        
+                      <button type="submit">Send Message</button>
+                    </div>
+        
+                  </div>
+                </form><!-- End Contact Form -->
+        
+              </div>
+        
+            </section><!-- /Contact Section -->
+        
+        </main>
+    </section>    
+
+    <footer class="text-center text-light p-3">
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script>
+        // Listen to the scroll event and update the background position
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;  // Get the vertical scroll position
+            const speed = -0.01;  // Use a negative value to reverse the background scroll direction
+
+            // Move the background in the opposite direction as the user scrolls
+            document.body.style.backgroundPositionY = `${scrollPosition * speed}px`;
+        });
+
+        // Toggle function for 3-dot menu on mobile
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarNav');
+            if (navbarLinks) {
+                navbarLinks.classList.toggle('show'); // Add or remove 'show' class
+            } else {
+                console.error("Navbar links element not found.");
+            }
+        }
+
+        // Function to check if an element is in the viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+
+        // Function to handle showing the fade-up animation when chatbot section is in view
+        function handleScroll() {
+            const chatbotSection = document.getElementById('chatbot');
+
+            // Check if the chatbot section is in the viewport and has not already been animated
+            if (isElementInViewport(chatbotSection) && !chatbotSection.classList.contains('visible')) {
+                chatbotSection.classList.add('visible');  // Show animation
+            }
+        }
+
+        // Add event listener to trigger the scroll function
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger handleScroll on page load in case the chatbot is already in view
+        document.addEventListener('DOMContentLoaded', handleScroll);
+
+
+        // Detect when the Showcase Section comes into view
+        window.addEventListener('scroll', function() {
+            const showcaseSection = document.querySelector('.showcase-section');
+            const sectionPosition = showcaseSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (sectionPosition < screenPosition) {
+                showcaseSection.classList.add('scrolled-into-view');
+            } else {
+                showcaseSection.classList.remove('scrolled-into-view');  // Reset animation on scroll up
+            }
+        });
+
+    </script>
+
+   <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.1.5/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/isotope-layout/3.0.6/isotope.pkgd.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+
+</body>
+</html>
