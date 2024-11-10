@@ -1,4 +1,4 @@
-Name: John Doe
+Name: Hamdan Alkhoori
 Title: Passionate Software Developer
 Education: Bachelor's degree in Computer Science from XYZ University
 Skills: 
