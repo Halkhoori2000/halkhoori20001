@@ -842,25 +842,7 @@ function openPopup(popupId) {
             <h3>Al Ain City Municipality</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
         `;
-    } else if (popupId === 'project1-popup') {
-        content = `
-            <h3>Smart Home Automation System</h3>
-            <img src="smart-home-automation.jpeg" alt="Project Image" style="width:100%; margin-top:20px;">
-            <p>
-                <ul>
-                    <li>Developed a web-based home automation platform using Raspberry Pi and Arduino</li>
-                    <li>Implemented machine learning algorithms for predictive energy management</li>
-                </ul>
-            </p>
-            <!-- Video Embed (centered) -->
-            <div style="text-align: center; margin: 30px 0;">
-                <video width="100%" controls>
-                    <source src="video-demo-link.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        `;
-    } else if (popupId === 'project2-popup') {
+    } else if (popupId === 'project14-popup') {
         content = `
             <h3>Blockchain Decentralized Finance</h3>
             <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
@@ -873,26 +855,192 @@ function openPopup(popupId) {
                 </video>
             </div>
         `;
-                } else if (popupId === 'presentation1-popup') {
+            } else if (popupId === 'project13-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project12-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project11-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project10-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project9-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project8-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project7-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project6-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project5-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project4-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project3-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project2-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+            } else if (popupId === 'project1-popup') {
+        content = `
+            <h3>Blockchain Decentralized Finance</h3>
+            <img src="blockchain-image1.webp" alt="Blockchain Image" style="width:100%; margin-top:20px;">
+            <p>Built a decentralized finance system using blockchain technology...</p>
+            <!-- Video Embed (centered) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <video width="100%" controls>
+                    <source src="video-demo-link.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        `;
+                } else if (popupId === 'presentation3-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
             <p>Details about the Data Analyst position.</p>
-            <p>Duration: June 2024 - July 2024</p>
         `;
                     } else if (popupId === 'presentation2-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
             <p>Details about the Data Analyst position.</p>
-            <p>Duration: June 2024 - July 2024</p>
         `;
                 } else if (popupId === 'presentation1-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
             <p>Details about the Data Analyst position.</p>
-            <p>Duration: June 2024 - July 2024</p>
         `;
 }
     popupContent.innerHTML = content;
