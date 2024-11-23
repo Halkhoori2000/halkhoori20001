@@ -809,7 +809,8 @@ function openPopup(popupId) {
     if (popupId === 'education-popup') {
         content = `
                     <h3>The Pennsylvania State University</h3>
-                    <img src="uc-berkeley.jpg" alt="University Image" style="width:100%; margin-top:20px;">
+                    <iframe src="BS_CMPSCMATH.pdf" style="width:100%; height:500px; border:none; margin-top:20px;"></iframe>
+
         `;
     } else if (popupId === 'experience-popup') {
         content = `
