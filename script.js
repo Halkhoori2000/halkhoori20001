@@ -1026,7 +1026,7 @@ function openPopup(popupId) {
         `;
                 } else if (popupId === 'presentation3-popup') {
         content = `
-            h3>Introduction to Blockchain Block</h3>
+            <h3>Introduction to Blockchain Block</h3>
             <embed src="BLOCKCHAIN.pdf" type="application/pdf" style="width:100%; height:600px; margin-top:20px;">
             <p>This presentation offers a comprehensive overview of blockchain technology, beginning with its fundamental concepts and extending to advanced applications. It explores blockchain architecture, cryptography principles, consensus mechanisms, and practical use cases such as cryptocurrencies, smart contracts, and supply chain management. Topics include the basics of encryption, public-private key systems, hashing, and the role of mining in blockchain networks. The presentation also compares centralized and decentralized networks, highlighting blockchain's transformative potential in fostering transparency, security, and efficiency.</p>
         `;
