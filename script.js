@@ -816,7 +816,8 @@ function openPopup(popupId) {
         content = `
             <h3>Royal Domestic Services</h3>
             <img src="2023-12-30.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
-            <p>https://linktr.ee/royaltadbeer</p>
+            <p><a href="https://linktr.ee/royaltadbeer" target="_blank" rel="noopener noreferrer" class="clickable-link">Visit Royal Domestic Services</a></p>
+
         `;
 
     } else if (popupId === 'internship3-popup') {
