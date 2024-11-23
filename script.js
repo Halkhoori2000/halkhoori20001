@@ -812,14 +812,30 @@ function openPopup(popupId) {
                     <iframe src="BS_CMPSCMATH.pdf" style="width:100%; height:500px; border:none; margin-top:20px;"></iframe>
 
         `;
-    } else if (popupId === 'experience-popup') {
+    } else if (popupId === 'experience1-popup') {
+        content = `
+            <h3>Royal Domestic Services</h3>
+            <img src="2023-12-30.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
+            <p>https://linktr.ee/royaltadbeer</p>
+        `;
+
+    } else if (popupId === 'internship1-popup') {
+        content = `
+            <h3>Redteam Hacker Academy</h3>
+            <img src="Hamdan Surour Alkhoori.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
+        `;
+            } else if (popupId === 'internship2-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
-            <p>Details about the Data Analyst position.</p>
+                <ul>
+                    <li>Analyzed large datasets to extract actionable insights for product development teams</li>
+                    <li>Created comprehensive data visualizations to support strategic decision-making</li>
+                    <li>Collaborated with cross-functional teams to optimize data processes and reporting frameworks</li>
+                </ul>
             <p>Duration: June 2024 - July 2024</p>
         `;
-    } else if (popupId === 'internships-popup') {
+            } else if (popupId === 'internship3-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
