@@ -806,7 +806,7 @@ function openPopup(popupId) {
     
     // Set content based on popupId
     let content = '';
-    if (popupId === 'education-popup') {
+    if (popupId === 'education1-popup') {
         content = `
                     <h3>The Pennsylvania State University</h3>
                     <iframe src="BS_CMPSCMATH.pdf" style="width:100%; height:500px; border:none; margin-top:20px;"></iframe>
