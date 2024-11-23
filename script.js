@@ -841,7 +841,8 @@ function openPopup(popupId) {
         content = `
             <h3>Al Ain City Municipality</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
-    } else if (popupId === 'presentations-popup') {
+       `;
+            } else if (popupId === 'presentations-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
