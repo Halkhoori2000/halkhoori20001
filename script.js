@@ -808,11 +808,8 @@ function openPopup(popupId) {
     let content = '';
     if (popupId === 'education-popup') {
         content = `
-            <img src="uc-berkeley.jpg" alt="University Image" style="width:100%; margin-top:20px;">
-            <h3>University of California, Berkeley</h3>
-            <p>Details about University of California, Berkeley.</p>
-            <p>Anticipated Graduation: Dec 2024</p>
-            <p>CGPA: 3.40/4.00</p>
+                    <h3>The Pennsylvania State University</h3>
+                    <img src="uc-berkeley.jpg" alt="University Image" style="width:100%; margin-top:20px;">
         `;
     } else if (popupId === 'experience-popup') {
         content = `
