@@ -841,13 +841,6 @@ function openPopup(popupId) {
         content = `
             <h3>Al Ain City Municipality</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
-       `;
-            } else if (popupId === 'presentations-popup') {
-        content = `
-            <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
-            <h3>Data Analyst Intern at Tech Innovators</h3>
-            <p>Details about the Data Analyst position.</p>
-            <p>Duration: June 2024 - July 2024</p>
         `;
     } else if (popupId === 'project1-popup') {
         content = `
@@ -880,8 +873,28 @@ function openPopup(popupId) {
                 </video>
             </div>
         `;
-    }
-
+                } else if (popupId === 'presentation1-popup') {
+        content = `
+            <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
+            <h3>Data Analyst Intern at Tech Innovators</h3>
+            <p>Details about the Data Analyst position.</p>
+            <p>Duration: June 2024 - July 2024</p>
+        `;
+                    } else if (popupId === 'presentation2-popup') {
+        content = `
+            <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
+            <h3>Data Analyst Intern at Tech Innovators</h3>
+            <p>Details about the Data Analyst position.</p>
+            <p>Duration: June 2024 - July 2024</p>
+        `;
+                } else if (popupId === 'presentation1-popup') {
+        content = `
+            <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
+            <h3>Data Analyst Intern at Tech Innovators</h3>
+            <p>Details about the Data Analyst position.</p>
+            <p>Duration: June 2024 - July 2024</p>
+        `;
+}
     popupContent.innerHTML = content;
     popup.style.display = 'block';
 
