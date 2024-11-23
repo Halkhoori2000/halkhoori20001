@@ -827,25 +827,15 @@ function openPopup(popupId) {
         `;
             } else if (popupId === 'internship2-popup') {
         content = `
+            <h3>UAE Embassy</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
-            <h3>Data Analyst Intern at Tech Innovators</h3>
-                <ul>
-                    <li>Analyzed large datasets to extract actionable insights for product development teams</li>
-                    <li>Created comprehensive data visualizations to support strategic decision-making</li>
-                    <li>Collaborated with cross-functional teams to optimize data processes and reporting frameworks</li>
-                </ul>
-            <p>Duration: June 2024 - July 2024</p>
+            
         `;
             } else if (popupId === 'internship1-popup') {
         content = `
+            <h3>Al Ain City Municipality</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
-            <h3>Data Analyst Intern at Tech Innovators</h3>
-                <ul>
-                    <li>Analyzed large datasets to extract actionable insights for product development teams</li>
-                    <li>Created comprehensive data visualizations to support strategic decision-making</li>
-                    <li>Collaborated with cross-functional teams to optimize data processes and reporting frameworks</li>
-                </ul>
-            <p>Duration: June 2024 - July 2024</p>
+
         `;
     } else if (popupId === 'presentations-popup') {
         content = `
