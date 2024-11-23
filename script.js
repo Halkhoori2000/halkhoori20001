@@ -820,23 +820,27 @@ function openPopup(popupId) {
 
         `;
 
-    } else if (popupId === 'internship3-popup') {
+            } else if (popupId === 'internship4-popup') {
         content = `
             <h3>Redteam Hacker Academy</h3>
             <img src="Hamdan Surour Alkhoori.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
         `;
-            } else if (popupId === 'internship2-popup') {
+            } else if (popupId === 'internship3-popup') {
         content = `
             <h3>UAE Embassy</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             
         `;
-            } else if (popupId === 'internship1-popup') {
+            } else if (popupId === 'internship2-popup') {
         content = `
             <h3>Al Ain City Municipality</h3>
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
 
         `;
+            } else if (popupId === 'internship1-popup') {
+        content = `
+            <h3>Al Ain City Municipality</h3>
+            <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
     } else if (popupId === 'presentations-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
