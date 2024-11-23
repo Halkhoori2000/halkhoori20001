@@ -819,7 +819,7 @@ function openPopup(popupId) {
             <p>https://linktr.ee/royaltadbeer</p>
         `;
 
-    } else if (popupId === 'internship1-popup') {
+    } else if (popupId === 'internship3-popup') {
         content = `
             <h3>Redteam Hacker Academy</h3>
             <img src="Hamdan Surour Alkhoori.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
@@ -835,7 +835,7 @@ function openPopup(popupId) {
                 </ul>
             <p>Duration: June 2024 - July 2024</p>
         `;
-            } else if (popupId === 'internship3-popup') {
+            } else if (popupId === 'internship1-popup') {
         content = `
             <img src="data-analytics.jpg" alt="Experience Image" style="width:100%; margin-top:20px;">
             <h3>Data Analyst Intern at Tech Innovators</h3>
